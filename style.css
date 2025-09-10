@@ -1,13 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 147.4px auto;
+    grid-row: 200px auto auto 100px;
+
+    grid-template-areas:"header nav "
+                        "main main "
+                        "main main "
+                        "footer footer ";
+    display: grid;
+    background-color:#D9C3B0 ;
+    
+}
+header{
+    grid-area: header;
+    background-color: #6FA0BF;
+}
+nav{
+    grid-area: nav;
+    display: grid;
+    padding-top: 12px;
+    background-color: #6FA0BF;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    color: white;
+    text-align: center;
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 #Image_Startpage{
     width: 100%;
 }
-nav ul li {
+ul, li {
     display: inline-block;
-    margin-right: 15px;
 }
-
+a{
+    color: white;
+    text-decoration: none;
+}
+#Logo{
+height: 80px;
+}
+#Sightspage{
+    margin-left: 120px;
+}
+#Restaurantspage{
+    margin-left: 120px;
+}
+#Eventspage{
+    margin-left: 120px;
+}
+#DiscoverOtherPlacesPage{
+    margin-left: 120px;
+}
