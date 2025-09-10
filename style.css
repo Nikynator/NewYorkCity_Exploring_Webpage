@@ -37,6 +37,8 @@ ul {
 }
 ul, li {
     display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
 }
 a{
     color: white;
@@ -45,15 +47,18 @@ a{
 #Logo{
 height: 80px;
 }
+#Hotelpage{
+    margin-left: 60px;
+}
 #Sightspage{
-    margin-left: 120px;
+    margin-left: 190px;
 }
 #Restaurantspage{
-    margin-left: 120px;
+    margin-left: 190px;
 }
 #Eventspage{
-    margin-left: 120px;
+    margin-left: 190px;
 }
 #DiscoverOtherPlacesPage{
-    margin-left: 120px;
+    margin-left: 190px;
 }
