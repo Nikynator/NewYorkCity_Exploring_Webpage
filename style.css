@@ -61,7 +61,7 @@ height: 80px;
 }
 
 /* Hide nav bar on small screens */
-@media (max-width: 900px) {
+@media (max-width: 480px) {
     nav {
         display: none;
         position: absolute;
