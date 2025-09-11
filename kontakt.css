@@ -50,3 +50,8 @@ input[type="radio"], input[type="checkbox"], input[type="text"], input[type="ema
   border: none;              
   padding: 5px 5px;      
   border-radius: 8px; }
+
+  .required {
+    color: #9cc8d9;
+    font-weight: bold;
+  }
