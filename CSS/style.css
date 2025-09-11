@@ -83,7 +83,17 @@ height: 80px;
     #Logo {
         cursor: pointer;
     }
+    body{
+         height: 450px;
+         margin: 0;
+         background: linear-gradient(to top, #D9C3B0 80%, #6FA0BF 20%);
+         background-repeat: no-repeat;
+         border: solid 8px #D9C3B0;
+         background-color: #D9C3B0;
+        }
+    
 }
+
 
 /* Animation for nav dropdown */
 @keyframes slideDown {
