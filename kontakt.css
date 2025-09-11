@@ -6,3 +6,47 @@
         #interesse:checked ~ .reisemöglichkeiten {
             display: block;
         }
+
+body {
+  background-color: #6FA0BF;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+
+form {
+ color: #6FA0BF;
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+fieldset {
+    border: 2px solid #9cc8d9;
+    margin-bottom: 20px;
+}
+
+
+#name {
+   margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="text"], input[type="email"], textarea {
+  accent-color: #9cc8d9;
+  border: 2px solid #9cc8d9 ;
+ }
+
+ .button {
+  margin-top: 10px;  
+  background-color: #9cc8d9; 
+  color: white;            
+  border: none;              
+  padding: 5px 5px;      
+  border-radius: 8px; }
