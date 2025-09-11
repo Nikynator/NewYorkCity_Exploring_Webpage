@@ -48,6 +48,7 @@ footer{
     grid-area: footer;
     color: white;
     text-align: center;
+    background-color: #6FA0BF;
 }
 ul {
     list-style-type: none;
