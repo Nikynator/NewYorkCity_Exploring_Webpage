@@ -50,14 +50,41 @@ a{
 height: 80px;
 }
 #Hotelpage{
-    margin-left: 60px;
+    margin-left: 0; /* Remove auto margin so it aligns with others */
 }
-#Sightspage{
-    margin-left: 190px;
+#Sightspage,
+#Restaurantspage,
+#Eventspage {
+    margin-left: 0;
 }
-#Restaurantspage{
-    margin-left: 190px;
+
+/* Hide nav bar on small screens */
+@media (max-width: 900px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px; /* height of header/logo */
+        left: 0;
+        width: 100%;
+        background-color: #6FA0BF;
+        z-index: 1000;
+    }
+    nav.show {
+        display: block;
+        animation: slideDown 0.3s;
+    }
+    ul, li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    #Logo {
+        cursor: pointer;
+    }
 }
-#Eventspage{
-    margin-left: 190px;
+
+/* Animation for nav dropdown */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
 }
