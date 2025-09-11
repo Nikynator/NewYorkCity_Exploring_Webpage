@@ -14,19 +14,23 @@
 
     <form action="https://formlog.offline.ch/log" method="POST">
 
+   <fieldset>
+
+   <legend>Allgemeines</legend>
+
    <p>Was ist der Grund für Ihre Kontaktaufnahme?</p>
    
    <label for="anfrage">Allgemeine Anfrage</label>
    <input type="radio" name="kontaktaufnahme" value="Allgemeine Anfrage" id="anfrage" required> <br>
 
    <label for="interesse">Interesse an einer Reise</label>
-   <input type="radio" name="kontaktaufnahme" value="Interesse an einer Reise" id="interesse">
+   <input type="radio" name="kontaktaufnahme" value="Interesse an einer Reise" id="interesse"> <br>
 
    <label for="probleme">Probleme mit der Webseite</label>
-   <input type="radio" name="kontaktaufnahme" value="Probleme mit der Webseite" id="probleme">
+   <input type="radio" name="kontaktaufnahme" value="Probleme mit der Webseite" id="probleme"> <br>
 
       <label for="anliegen">Sonstige Anliegen</label>
-   <input type="radio" name="kontaktaufnahme" value="Sonstige Anliegen" id="anliegen">
+   <input type="radio" name="kontaktaufnahme" value="Sonstige Anliegen" id="anliegen"> <br>
 
    <div class="reisemöglichkeiten">
     <p>Welche Verkehrsmittel würden Sie für Ihre Reise in betracht ziehen? </p>
@@ -45,14 +49,24 @@
    </div>
    <br>
 
+   </fieldset>
+
+   <fieldset>
+    <legend>Persönliche Angaben</legend>
+
     <label for="name">Vor- & Nachname</label> <br>
     <input type="text" name="Name" id="name" required> <br>
 
     <label for="email">E-Mail</label> <br>
     <input type="email" name="Email" id="email" required> <br>
 
+    </fieldset>
+    <fieldset>
+        <legend>Sonstiges</legend>
+
     <label for="bemerkung">Bemerkung</label> <br>
     <textarea name="Bemerkung" id="bemerkung" required></textarea>
+    </fieldset>
 
     <input type="submit" value="Abschicken">
 </form>

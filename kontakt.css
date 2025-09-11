@@ -1,0 +1,8 @@
+.reisemöglichkeiten {
+            display: none;
+            margin-left: 20px;
+        }
+
+        #interesse:checked ~ .reisemöglichkeiten {
+            display: block;
+        }
