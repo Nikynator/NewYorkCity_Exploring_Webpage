@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     let navVisible = false;
 
-    // Only activate on small screens
     function isMobile() {
         return window.innerWidth <= 900;
     }
@@ -55,13 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 nav.classList.add('show');
                 navVisible = true;
             } else {
-                // Go to index.html
+              
                 window.location.href = 'index.html';
             }
         }
     });
 
-    // Hide nav if window resized to desktop
     window.addEventListener('resize', function() {
         if (!isMobile()) {
             nav.classList.remove('show');

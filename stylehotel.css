@@ -1,87 +1,30 @@
-#Image_Startpage{
-    width: 100%;
-}
+
 .galerie-container {
   display: grid; 
-  grid-template-columns: 1r 1r;
-  grid-template-rows: 1r 1r;
-  grid-template-areas: "hotel1 hotel2"
-                       "hotel3 hotel4";
+  grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
-  align-items: center; 
-  padding: 10px; 
-  width: auto; 
+  align-items: start; 
+  padding: 20px; 
 }
 
-.galerie-container img {
-  width: auto; 
+.galerie-element img {
+  width: 100%; 
   height: auto;
-  margin-right: 10px; 
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: 147.4px auto;
-    grid-row: 200px auto auto 100px;
-
-    grid-template-areas:"header nav "
-                        "main main "
-                        "main main "
-                        "footer footer ";
-    display: grid;
-    background-color:#D9C3B0 ;
-    
-}
-header{
-    grid-area: header;
-    background-color: #6FA0BF;
-}
-nav{
-    grid-area: nav;
-    display: grid;
-    padding-top: 12px;
-    background-color: #6FA0BF;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-    color: white;
-    text-align: center;
-    background-color: #6FA0BF;
-}
-ul {
-    list-style-type: none;
-}
-#Image_Startpage{
-    width: 100%;
-}
-ul, li {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: bold;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-#Logo{
-height: 80px;
-}
-#Hotelpage{
-    margin-left: 60px;
-}
-#Sightspage{
-    margin-left: 190px;
-}
-#Restaurantspage{
-    margin-left: 190px;
-}
-#Eventspage{
-    margin-left: 190px;
+  border-radius: 8px;
 }
 
-
-h1, h2, p{
+h1, h2, p {
   color: white;
+}
+
+.textbereich-hotel {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .galerie-container {
+    grid-template-columns: 1fr;   
+    grid-gap: 20px;               
+  }
 }
