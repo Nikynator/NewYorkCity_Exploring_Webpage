@@ -53,9 +53,6 @@ footer{
 ul {
     list-style-type: none;
 }
-#Image_Startpage{
-    width: 100%;
-}
 ul, li {
     display: inline-block;
     font-size: 17px;
