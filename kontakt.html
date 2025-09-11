@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <title>Kontaktformular</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kontaktformular</h1>
+    </header>
+
+    <form action="https://formlog.offline.ch/log" method="POST">
+
+   <p>Was ist der Grund für Ihre Kontaktaufnahme?</p>
+   
+   <label for="anfrage">Allgemeine Anfrage</label>
+   <input type="radio" name="kontaktaufnahme" value="Allgemeine Anfrage" id="anfrage" required> <br>
+
+   <label for="interesse">Interesse an einer Reise</label>
+   <input type="radio" name="kontaktaufnahme" value="Interesse an einer Reise" id="interesse">
+
+   <label for="probleme">Probleme mit der Webseite</label>
+   <input type="radio" name="kontaktaufnahme" value="Probleme mit der Webseite" id="probleme">
+
+      <label for="anliegen">Sonstige Anliegen</label>
+   <input type="radio" name="kontaktaufnahme" value="Sonstige Anliegen" id="anliegen">
+
+   <div class="reisemöglichkeiten">
+    <p>Welche Verkehrsmittel würden Sie für Ihre Reise in betracht ziehen? </p>
+
+    <label for="flugzeug">Flugzeug</label>
+    <input type="checkbox" name="verkehrsmittel" value="Flugzeug" id="flugzeug" required> <br>
+
+    <label for="zug">Zug</label>
+    <input type="checkbox" name="verkehrsmittel" value="Zug" id="zug"> <br>
+
+    <label for="auto">Auto</label>
+    <input type="checkbox" name="verkehrsmittel" value="Auto" id="auto"> <br>
+
+    <label for="fahrrad">Fahrrad</label>
+    <input type="checkbox" name="verkehrsmittel" value="Fahrrad" id="fahrrad"> 
+   </div>
+   <br>
+
+    <label for="name">Vor- & Nachname</label> <br>
+    <input type="text" name="Name" id="name" required> <br>
+
+    <label for="email">E-Mail</label> <br>
+    <input type="email" name="Email" id="email" required> <br>
+
+    <label for="bemerkung">Bemerkung</label> <br>
+    <textarea name="Bemerkung" id="bemerkung" required></textarea>
+
+    <input type="submit" value="Abschicken">
+</form>
+    
+</body>
+</html>
