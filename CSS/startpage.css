@@ -1,0 +1,32 @@
+@media (max-width: 320px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px; /* height of header/logo */
+        left: 0;
+        width: 100%;
+        background-color: #6FA0BF;
+        z-index: 1000;
+    }
+    nav.show {
+        display: block;
+        animation: slideDown 0.3s;
+    }
+    ul, li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    #Logo {
+        cursor: pointer;
+    }
+    body{
+         height: 450px;
+         margin: 0;
+         background: linear-gradient(to top, #D9C3B0 70%, #6FA0BF 30%);
+         background-repeat: no-repeat;
+         border: solid 8px #D9C3B0;
+         background-color: #D9C3B0;
+        }
+    
+}
