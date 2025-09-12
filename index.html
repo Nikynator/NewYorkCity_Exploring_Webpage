@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="CSS/startpage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/startpage.css" />
     <title>New York City Explorers</title>
-</head>
-<body>
-
-    <header>  
-        <a href="index.html"><img id="Logo" src="images/Logo1.png" alt="Logo von Statue of Liberty"></a>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img id="Logo" src="images/Logo1.png" alt="Logo von Statue of Liberty" />
+      </a>
     </header>
 
-    <nav> 
-        <ul>
-            <li id="Hotelpage"><a href="hotels.html">Hotels</a></li>
-            <li id="Sightspage"><a href="sights.html">Sights</a></li>
-            <li id="Eventspage"><a href="events.html">Events</a></li>
-            <li id="Restaurantspage"><a href="restaurants.html">Foods</a></li>
-     </ul> 
+    <nav>
+      <ul>
+        <li id="Hotelpage"><a href="hotels.html">Hotels</a></li>
+        <li id="Sightspage"><a href="sights.html">Sights</a></li>
+        <li id="Eventspage"><a href="events.html">Events</a></li>
+        <li id="Restaurantspage"><a href="restaurants.html">Foods</a></li>
+      </ul>
     </nav>
 
     <main>
-        <img class="homeimg" src="Images/NewYorkSkyline.jpg" alt="Bild von New York Skyline" id="Image_Startpage">
-        <img class="homeimg" src="Images/Night.jpg" alt="Bild von der New York Skyline bei Nacht" id="Image_Night">
-        <img class="homeimg" src="Images/snowy_NYC.jpg" alt="Bild von einer verschneiten Strasse in New York City" id="Image_Snowy">
+      <img
+        class="homeimg"
+        src="images/NewYorkSkyline.jpg"
+        alt="Bild von New York Skyline"
+        id="Image_Startpage"
+      />
+      <img
+        class="homeimg"
+        src="images/Night.jpg"
+        alt="Bild von der New York Skyline bei Nacht"
+        id="Image_Night"
+      />
+      <img
+        class="homeimg"
+        src="images/snowy_NYC.jpg"
+        alt="Bild von einer verschneiten Strasse in New York City"
+        id="Image_Snowy"
+      />
     </main>
 
-
     <footer>
-    <p>Copyright &copy; 2025 Dario Wüest, Nik Fuchs</p>
-    <p></p>
-    <p>
-        <a href="datenschutz.html">Datenschuz</a> <br>
-        <a href="impressum.html">Impressum</a> <br>
-        <a href="kontakt.html">Kontakt</a> <br>
-        <a href="https://blj-ict-bz.ch/2025/html/Projekt_Tokyo-Exploring/" id="DiscoverOtherPlacesPage">Discover other Places</a>
-    </p>
+      <p>Copyright &copy; 2025 Dario Wüest, Nik Fuchs</p>
+      <p>
+        <a href="datenschutz.html">Datenschuz</a> <br />
+        <a href="impressum.html">Impressum</a> <br />
+        <a href="kontakt.html">Kontakt</a> <br />
+        <a
+          href="https://blj-ict-bz.ch/2025/html/Projekt_Tokyo-Exploring/"
+          id="DiscoverOtherPlacesPage"
+          >Discover other Places</a
+        >
+      </p>
     </footer>
 
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const logo = document.getElementById('Logo');
-    const nav = document.querySelector('nav');
-    let navVisible = false;
+      document.addEventListener("DOMContentLoaded", function () {
+        const logo = document.getElementById("Logo");
+        const nav = document.querySelector("nav");
+        let navVisible = false;
 
-    function isMobile() {
-        return window.innerWidth <= 900;
-    }
+        function isMobile() {
+          return window.innerWidth <= 900;
+        }
 
-    logo.addEventListener('click', function(e) {
-        if (isMobile()) {
+        logo.addEventListener("click", function (e) {
+          if (isMobile()) {
             e.preventDefault();
             if (!navVisible) {
-                nav.classList.add('show');
-                navVisible = true;
+              nav.classList.add("show");
+              navVisible = true;
             } else {
-              
-                window.location.href = 'index.html';
+              window.location.href = "index.html";
             }
-        }
-    });
+          }
+        });
 
-    window.addEventListener('resize', function() {
-        if (!isMobile()) {
-            nav.classList.remove('show');
+        window.addEventListener("resize", function () {
+          if (!isMobile()) {
+            nav.classList.remove("show");
             navVisible = false;
-        }
-    });
-});
-</script>
-
-    
-</body>
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
