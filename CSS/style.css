@@ -1,6 +1,5 @@
 .homeimg {
-    width: 100%;
-    border: solid #6FA0BF 10px;
+    width: 98%;
     border-radius: 16px;
     margin-bottom: 20px;
 }
@@ -9,68 +8,72 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     grid-template-columns: 147.4px auto;
     grid-row: 200px auto auto 100px;
+
     grid-template-areas:"header nav "
                         "main main "
                         "main main "
                         "footer footer ";
     display: grid;
     background-color:#D9C3B0 ;
+    
 }
-
 header{
     grid-area: header;
     background-color: #6FA0BF;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
-
 nav{
     grid-area: nav;
     display: grid;
     padding-top: 12px;
     background-color: #6FA0BF;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
-
 main{
     grid-area: main;
 }
-
 footer{
     grid-area: footer;
     color: white;
     text-align: center;
     background-color: #6FA0BF;
-    margin-top: 80px;
-}
+    margin-top: 20px;
 
+}
 ul {
     list-style-type: none;
 }
-
+#Image_Startpage{
+    width: 100%;
+}
+#Image_Night{
+    width: 100%;
+}
+#Image_Snowy{
+    width: 100%;
+}
 ul, li {
+
     display: inline-block;
     font-size: 17px;
     font-weight: bold;
 }
-
 a{
     color: white;
     text-decoration: none;
 }
-
 #Logo{
-    height: 80px;
+height: 80px;
 }
-
 #Hotelpage{
     margin-left: 0; 
 }
-
 #Sightspage,
 #Restaurantspage,
 #Eventspage {
     margin-left: 0;
 }
+
 
 @media (max-width: 480px) {
     nav {
@@ -83,10 +86,7 @@ a{
         z-index: 1000;
     }
     nav.show {
-        width: 180px;
         display: block;
-        background-color: #6FA0BF;
-        border-left: #D9C3B0 solid 8px ;
         animation: slideDown 0.3s;
     }
     ul, li {
@@ -104,13 +104,17 @@ a{
          background-repeat: no-repeat;
          border: solid 8px #D9C3B0;
          background-color: #D9C3B0;
-    }
+        }
+    
 }
+
+
 
 @keyframes slideDown {
     from { opacity: 0; transform: translateY(-20px);}
     to { opacity: 1; transform: translateY(0);}
 }
+
 
 @media (min-width: 1116px) {
     nav ul li {
