@@ -1,75 +1,116 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/kontakt.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/kontakt.css" />
     <title>Kontaktformular</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Kontaktformular</h1>
+      <h1>Kontaktformular</h1>
     </header>
 
     <form action="https://formlog.offline.ch/log" method="POST">
+      <fieldset>
+        <legend>Allgemeines</legend>
 
-   <fieldset>
+        <p>
+          Was ist der Grund für Ihre Kontaktaufnahme?<span class="required">
+            *</span
+          >
+        </p>
 
-   <legend>Allgemeines</legend>
+        <input
+          type="radio"
+          name="Kontaktaufnahme"
+          value="Allgemeine Anfrage"
+          id="anfrage"
+          required
+        />
+        <label for="anfrage">Allgemeine Anfrage</label> <br />
 
-   <p>Was ist der Grund für Ihre Kontaktaufnahme?<span class="required"> *</span></p>
-   
-   <input type="radio" name="Kontaktaufnahme" value="Allgemeine Anfrage" id="anfrage" required>
-   <label for="anfrage">Allgemeine Anfrage</label> <br>
+        <input
+          type="radio"
+          name="Kontaktaufnahme"
+          value="Interesse an einer Reise"
+          id="interesse"
+        />
+        <label for="interesse">Interesse an einer Reise</label> <br />
 
-   <input type="radio" name="Kontaktaufnahme" value="Interesse an einer Reise" id="interesse"> 
-   <label for="interesse">Interesse an einer Reise</label> <br>
+        <input
+          type="radio"
+          name="Kontaktaufnahme"
+          value="Probleme mit der Webseite"
+          id="probleme"
+        />
+        <label for="probleme">Probleme mit der Webseite</label> <br />
 
-   <input type="radio" name="Kontaktaufnahme" value="Probleme mit der Webseite" id="probleme"> 
-   <label for="probleme">Probleme mit der Webseite</label> <br>
+        <input
+          type="radio"
+          name="Kontaktaufnahme"
+          value="Sonstige Anliegen"
+          id="anliegen"
+        />
+        <label for="anliegen">Sonstige Anliegen</label> <br />
 
-   <input type="radio" name="Kontaktaufnahme" value="Sonstige Anliegen" id="anliegen"> 
-   <label for="anliegen">Sonstige Anliegen</label> <br>
+        <div class="reisemöglichkeiten">
+          <p>
+            Welche Verkehrsmittel würden Sie für Ihre Reise in betracht ziehen?
+          </p>
 
-   <div class="reisemöglichkeiten">
-    <p>Welche Verkehrsmittel würden Sie für Ihre Reise in betracht ziehen?</p>
+          <input
+            type="checkbox"
+            name="Verkehrsmittel1"
+            value="Flugzeug"
+            id="flugzeug"
+          />
+          <label for="flugzeug">Flugzeug</label> <br />
 
-    <input type="checkbox" name="Verkehrsmittel1" value="Flugzeug" id="flugzeug" > 
-    <label for="flugzeug">Flugzeug</label> <br>
+          <input type="checkbox" name="Verkehrsmittel2" value="Zug" id="zug" />
+          <label for="zug">Zug</label> <br />
 
-    <input type="checkbox" name="Verkehrsmittel2" value="Zug" id="zug">
-    <label for="zug">Zug</label> <br>
+          <input
+            type="checkbox"
+            name="Verkehrsmittel3"
+            value="Auto"
+            id="auto"
+          />
+          <label for="auto">Auto</label> <br />
 
-    <input type="checkbox" name="Verkehrsmittel3" value="Auto" id="auto">
-    <label for="auto">Auto</label> <br>
+          <input
+            type="checkbox"
+            name="Verkehrsmittel4"
+            value="Fahrrad"
+            id="fahrrad"
+          />
+          <label for="fahrrad">Fahrrad</label>
+        </div>
+        <br />
+      </fieldset>
 
-    <input type="checkbox" name="Verkehrsmittel4" value="Fahrrad" id="fahrrad">
-    <label for="fahrrad">Fahrrad</label>
-   </div>
-   <br>
+      <fieldset>
+        <legend>Persönliche Angaben</legend>
 
-   </fieldset>
+        <label for="name" id="name"
+          >Vor- & Nachname <span class="required">*</span></label
+        >
+        <br />
+        <input type="text" name="Name" id="name" required /> <br />
 
-   <fieldset>
-    <legend>Persönliche Angaben</legend>
-
-    <label for="name" id="name">Vor- & Nachname <span class="required">*</span></label> <br>
-    <input type="text" name="Name" id="name" required> <br>
-
-    <label for="email">E-Mail<span class="required"> *</span></label> <br>
-    <input type="email" name="Email" id="email" required> <br>
-
-    </fieldset>
-    <fieldset>
+        <label for="email">E-Mail<span class="required"> *</span></label> <br />
+        <input type="email" name="Email" id="email" required /> <br />
+      </fieldset>
+      <fieldset>
         <legend>Sonstiges</legend>
 
-    <label for="bemerkung">Bemerkung<span class="required"> *</span></label> <br>
-    <textarea name="Bemerkung" id="bemerkung" required></textarea>
-    </fieldset>
+        <label for="bemerkung">Bemerkung<span class="required"> *</span></label>
+        <br />
+        <textarea name="Bemerkung" id="bemerkung" required></textarea>
+      </fieldset>
 
-    <input class="button" type="submit" value="Abschicken">
-</form>
-    
-</body>
+      <input class="button" type="submit" value="Abschicken" />
+    </form>
+  </body>
 </html>
