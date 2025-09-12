@@ -38,7 +38,9 @@ ul {
 #Image_Startpage{
     width: 100%;
 }
-
+#Image_Night{
+    width: 100%;
+}
 ul, li {
 
     display: inline-block;
